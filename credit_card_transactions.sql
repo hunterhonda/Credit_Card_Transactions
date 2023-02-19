@@ -173,17 +173,6 @@ order by datediff1
 
 
 
-
-
-
-select * ,
-ROW_NUMBER() over(partition by city order by transaction_date) as rn
-from credit_card_transactions
-
-
-
-
-
 select * 
 from credit_card_transactions
 order by transaction_id asc;
